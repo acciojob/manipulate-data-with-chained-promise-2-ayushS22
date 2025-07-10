@@ -33,7 +33,7 @@ function ArrayProcess(){
 		});
 			setTimeOut(()=>{
 				document.getElementById("output").textContent = doubleNumber.join(",");
-			},2000);
+			},3000);
 		});
 	})
 	
