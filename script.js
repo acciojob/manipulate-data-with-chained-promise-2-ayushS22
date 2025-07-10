@@ -41,6 +41,7 @@ function ArrayProcess(){
 	});
 	
 }
+  window.onload = ArrayProcess;
 
 
 
