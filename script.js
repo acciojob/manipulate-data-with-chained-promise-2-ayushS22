@@ -1,14 +1,14 @@
 //your JS code here. If required.
 function ArrayProcess(){
 	const initialPromise = new Promise((resolve)=>{
-	setTimeOut(()=>{
+	setTimeout(()=>{
 	const ArrayNumber = [1,2,3,4];
-			resolve(AarrayNumber);// pass this array to the next .then()
+			resolve(ArrayNumber);// pass this array to the next .then()
 		},3000);
 	});
 
 	//now i am going to start chaining promise process yaha se
-	initialPromise.then((AarrayNumber)=>{        // First .then() receives the numbers array
+	initialPromise.then((ArrayNumber)=>{        // First .then() receives the numbers array
 // Create another promise for filtering even numbers
 		return new Promise((resolve)=>{
 // Filter out odd numbers; keep even ones only
@@ -34,14 +34,14 @@ function ArrayProcess(){
 			setTimeout(()=>{
 				document.getElementById("output").textContent = doubleNumber.join(",");
 				 // Resolve the final result (not needed further, but good practice)
-              resolve(doubledNumber);
+              resolve(doubleNumber);
 			},2000);
 			
 		});
 	});
 	
 }
-  window.onload = ArrayProcess;
+  ArrayProcess();
 
 
 
