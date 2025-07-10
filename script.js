@@ -33,9 +33,9 @@ function ArrayProcess(){
 		});
 			setTimeOut(()=>{
 				document.getElementById("output").textContent = doubleNumber.join(",");
-			},3000);
+			},2000);
 		});
-	})
+	});
 	
 }
 
